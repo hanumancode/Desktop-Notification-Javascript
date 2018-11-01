@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="push.js"></script>
     <title>Desktop Notification with Javascript using Push JS</title>
 </head>
 <body>
+    <div class="wrapper">
+        <button id="notify-btn">Notify BTC Price</button>
+    </div>
     
+    <script>
+        document.getElementById("notify-btn").addEventListener("click", function(){
+            Push.create("Bitcoin $8000");
+        });
+    </script>
 </body>
 </html>
